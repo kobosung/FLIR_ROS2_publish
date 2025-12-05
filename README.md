@@ -1,9 +1,9 @@
 # FLIR Lepton ROS2 
 **Gemini 3**로 작성되었습니다.
-### ✏️ 준비물
-1. **HW** : FLIR Lepton 2.5 + Pure Thermal 2 보드
+### ⚠️ 개발환경
+**HW** : FLIR Lepton 2.5 + Pure Thermal 2 보드
 
-2. **개발환경**: Ubuntu 22.04 + ROS 2 Humble
+**환경**: Ubuntu 22.04 + ROS 2 Humble
 
 ### 💾 환경 설정 및 필수 패키지 설치
 먼저 시스템에 필요한 도구와 ROS 2, 카메라 관련 라이브러리를 설치합니다.
