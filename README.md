@@ -1,11 +1,11 @@
 # FLIR Lepton ROS2 
 **Gemini 3**로 작성되었습니다.
-### ⚠️ 개발환경
+## ⚠️ 개발환경
 **HW** : FLIR Lepton 2.5 + Pure Thermal 2 보드
 
 **환경**: Ubuntu 22.04 + ROS 2 Humble
 
-### 💾 환경 설정 및 필수 패키지 설치
+## 💾 환경 설정 및 필수 패키지 설치
 먼저 시스템에 필요한 도구와 ROS 2, 카메라 관련 라이브러리를 설치합니다.
 터미널을 열고 다음 명령어들을 순서대로 입력하세요:
 ```bash
@@ -31,7 +31,7 @@ pip3 install opencv-python numpy
 sudo apt install v4l2-utils -y
 ```
 
-### 🎥 카메라 연결 확인
+## 🎥 카메라 연결 확인
 FLIR Lepton(PureThermal)을 USB에 연결한 후 다음 명령어로 장치를 확인합니다.
 ```bash
 ls /dev/video*
@@ -42,7 +42,7 @@ v4l2-ctl -d /dev/video0 --list-formats-ext
 ```
 출력 결과에 `'Y16 ' (16-bit Greyscale)` 포맷이 보이면 Lepton 카메라가 맞습니다.
 
-### 📂 ROS2 패키지 생성 (빌드 파일 작성)
+## 📂 ROS2 패키지 생성 (빌드 파일 작성)
 ROS 2 워크스페이스를 만들고 Python 기반의 패키지를 생성합니다.
 ```bash
 # 워크스페이스 생성
@@ -189,7 +189,7 @@ colcon build --symlink-install
 ```
 빌드가 성공적으로 끝나면 `Summary: 1 package finished` 메시지가 뜹니다.
 
-### 🖼️ 실행 및 RViz 시각화
+## 🖼️ 실행 및 RViz 시각화
 
 USB 카메라 장치에 접근 권한이 필요할 수 있습니다. (장치를 뺐다 끼면 초기화될 수 있음)
 ```bash
